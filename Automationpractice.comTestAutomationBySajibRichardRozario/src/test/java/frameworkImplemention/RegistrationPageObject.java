@@ -5,8 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 public class RegistrationPageObject {
 
-	
-   private static WebElement locator = null;
+	//create class variable
+	private static WebElement locator = null;
    
 
 	

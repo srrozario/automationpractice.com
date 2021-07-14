@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="frameworkImplemention.RegistrationPageTestNG">
+      <class name="frameworkImplemention.OrderAnItemTestNG2">
         <methods>
           <include name="setupFunction"/>
-          <include name="testStepsFunction2"/>
           <include name="tearDownFunction"/>
+          <include name="testStepsFunction2"/>
         </methods>
-      </class> <!-- frameworkImplemention.RegistrationPageTestNG -->
+      </class> <!-- frameworkImplemention.OrderAnItemTestNG2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

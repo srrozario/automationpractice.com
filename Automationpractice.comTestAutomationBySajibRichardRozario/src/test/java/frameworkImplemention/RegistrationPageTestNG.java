@@ -25,7 +25,7 @@ public class RegistrationPageTestNG {
 	    }
 	    
 	    
-	    // test steps function
+	    // test steps function first priority 
 	    @Test(priority = 1)
 	   	public void testStepsFunction1 () throws InterruptedException 
 	    
@@ -59,6 +59,8 @@ public class RegistrationPageTestNG {
  		Thread.sleep(5000);
 	    }
  	
+	    
+	    //test steps function second priority 
  		@Test(priority = 2)
  		public void testStepsFunction2() 
  		{
@@ -161,5 +163,9 @@ public class RegistrationPageTestNG {
  		    {
  		    	System.out.println("Please go to LoginPageTestNG class to view next part of this automation process");
  		    	
+ 		    	
+ 		    	//quit the browser
+ 		   		driver.quit();
+ 		   	    }
  		    }
-	    }
+	    

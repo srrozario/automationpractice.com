@@ -25,7 +25,6 @@ public class LoginPageTestNG {
 	
 	
 	//test step function
-	
 	@Test
 	public void testStepsFunction () 
     
@@ -64,6 +63,8 @@ public class LoginPageTestNG {
 	    {
 	    	System.out.println("Please go to AddToCartItemsTestNG class to view next part of this automation process");
 	    	
+	    	//quit the browser
+	    	driver.quit();
 	    }
 	
 }

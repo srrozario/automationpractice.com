@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class LoginPageObject {
 
+//create class variable
 private static WebElement locator = null;
    
 
