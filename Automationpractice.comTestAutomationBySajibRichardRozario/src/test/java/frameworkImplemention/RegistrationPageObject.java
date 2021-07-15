@@ -8,7 +8,6 @@ public class RegistrationPageObject {
 	//create class variable
 	private static WebElement locator = null;
    
-
 	
 	//sign-in 
 	public static WebElement signinbutton(WebDriver driver)

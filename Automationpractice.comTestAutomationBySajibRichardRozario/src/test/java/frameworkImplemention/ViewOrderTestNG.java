@@ -33,6 +33,7 @@ public class ViewOrderTestNG {
 	public void testStepsFunction () throws IOException 
 	    
 	{
+		
 	//visiting the login url
 	driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
 			
@@ -50,15 +51,15 @@ public class ViewOrderTestNG {
 	    	
 	    	
 	//inserting login email address action
-	LoginPageObject.loginemail(driver).sendKeys("xisyfyxy@boximail38.com");
+	LoginLogoutPageObject.loginemail(driver).sendKeys("xisyfyxy@boximail38.com");
 			
 			
 	//inserting login password action
-	LoginPageObject.loginpassword(driver).sendKeys("Sa@123");
+	LoginLogoutPageObject.loginpassword(driver).sendKeys("Sa@123");
 		
 		    
 	//clicking on login button action
-	LoginPageObject.loginbutton(driver).click();
+	LoginLogoutPageObject.loginbutton(driver).click();
 	
 	
 	//clicking on the order history

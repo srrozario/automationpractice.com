@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LoginPageObject {
+public class LoginLogoutPageObject {
 
 //create class variable
 private static WebElement locator = null;
@@ -19,7 +19,7 @@ private static WebElement locator = null;
 	}
 	
 	
-	//login password
+	//login password field
 	public static WebElement loginpassword(WebDriver driver)
 	{
 		locator = driver.findElement(By.id("passwd"));
@@ -35,5 +35,10 @@ private static WebElement locator = null;
 	}	
 	
 	
-	
+	//logout button
+	public static WebElement logoutbutton(WebDriver driver)
+	{
+		locator = driver.findElement(By.xpath("//a[@title='Log me out']"));
+		return locator;
+	}	
 }

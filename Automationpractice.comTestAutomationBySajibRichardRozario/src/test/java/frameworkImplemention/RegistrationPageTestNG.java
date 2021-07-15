@@ -62,7 +62,7 @@ public class RegistrationPageTestNG {
 	    
 	    //test steps function second priority 
  		@Test(priority = 2)
- 		public void testStepsFunction2() 
+ 		public void testStepsFunction2() throws InterruptedException 
  		{
  		
  		//gender selection action
@@ -119,8 +119,10 @@ public class RegistrationPageTestNG {
  		//inserting address line 1 action
  		RegistrationPageObject.addressone(driver).sendKeys("South Corner");
  		
+ 		
  		//inserting address line 2 action
  		RegistrationPageObject.addresstwo(driver).sendKeys("Street");
+ 		
  		
  		//inserting city name action
  		RegistrationPageObject.city(driver).sendKeys("Boise");
@@ -154,6 +156,9 @@ public class RegistrationPageTestNG {
  		//clicking on the register button action 
  		RegistrationPageObject.register(driver).click();
  		
+ 		
+ 		//pausing for 3 sec
+ 		Thread.sleep(3000);
  		
  		}
  		

@@ -101,15 +101,15 @@ public class OrderAnItemTestNG {
 	    
 	    
 	    //inserting login email address action
-	    LoginPageObject.loginemail(driver).sendKeys("xisyfyxy@boximail38.com");
+	    LoginLogoutPageObject.loginemail(driver).sendKeys("xisyfyxy@boximail38.com");
 	  		
 	  		
 	    //inserting login password action
-	    LoginPageObject.loginpassword(driver).sendKeys("Sa@123");
+	    LoginLogoutPageObject.loginpassword(driver).sendKeys("Sa@123");
 	  	
 	  	    
 	    //clicking on login button action
-	    LoginPageObject.loginbutton(driver).click();
+	    LoginLogoutPageObject.loginbutton(driver).click();
 	    
 	    
 	    //add a comment
@@ -131,13 +131,16 @@ public class OrderAnItemTestNG {
 	    //selecting payment type
 	    OrderAnItemObject.payment(driver).click();
 	    
+	    
 	    //confirming order
 	    OrderAnItemObject.orderconfirmation(driver).click();   
+	    
 	    
 	    //capturing screenshot
 	    File scrnshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scrnshot, new File(".//screenshot/order_complete.png"));
 	    
+		
 		//pausing for 3 sec
 	    Thread.sleep(3000);
 	}	

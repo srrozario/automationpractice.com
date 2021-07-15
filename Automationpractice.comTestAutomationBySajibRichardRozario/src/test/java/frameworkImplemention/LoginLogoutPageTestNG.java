@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class LoginPageTestNG {
+public class LoginLogoutPageTestNG {
 	
 
 	//create class variable
@@ -26,7 +26,7 @@ public class LoginPageTestNG {
 	
 	//test step function
 	@Test
-	public void testStepsFunction () 
+	public void testStepsFunction () throws InterruptedException 
     
     {
     	//visiting the login url
@@ -45,16 +45,24 @@ public class LoginPageTestNG {
     	
     	
     	//inserting login email address action
-		LoginPageObject.loginemail(driver).sendKeys("xisyfyxy@boximail38.com");
+		LoginLogoutPageObject.loginemail(driver).sendKeys("xisyfyxy@boximail38.com");
 		
 		
 		//inserting login password action
-		LoginPageObject.loginpassword(driver).sendKeys("Sa@123");
+		LoginLogoutPageObject.loginpassword(driver).sendKeys("Sa@123");
 	
 	    
 		//clicking on login button action
-		LoginPageObject.loginbutton(driver).click();
+		LoginLogoutPageObject.loginbutton(driver).click();
 	
+		
+		//pausing for 3 sec
+ 		Thread.sleep(3000);
+		
+ 		
+		//clicking on logout button 
+		LoginLogoutPageObject.logoutbutton(driver).click();
+		
 }
 	
 	@AfterTest
